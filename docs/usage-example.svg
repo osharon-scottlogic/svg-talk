@@ -1,0 +1,73 @@
+<svg
+   width="16mm"
+   height="16mm"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg98130"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="showcase.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   class="showcase">
+   <style>
+      .showcase rect {
+         cursor: pointer;
+         fill:none;
+         stroke:#ff9999;
+         stroke-width:2;
+         stroke-miterlimit:4;
+         stroke-dasharray:none;
+         stroke-opacity:1
+         pointer-events: all;
+      }
+      .showcase rect:hover ~ circle {
+         animation-direction: reverse;
+      }
+
+      .showcase rect:hover {
+         fill: #ff9999;
+      }
+      .showcase text {
+         cursor: pointer;
+         font-style:normal;
+         font-variant:normal;
+         font-weight:normal;
+         font-stretch:normal;
+         font-size:5px;line-height:1.25;
+         font-family:sans-serif;
+         -inkscape-font-specification:'sans-serif, Normal'
+         ;font-variant-ligatures:normal;
+         font-variant-caps:normal;
+         font-variant-numeric:normal;
+         font-variant-east-asian:normal;
+         text-align:center;
+         text-anchor:middle;
+         stroke-width:0.25;
+         pointer-events: none;
+      }
+      .showcase circle {
+         transform: rotate(0deg);
+         transform-origin: 8px 8px;
+         animation: orbiting 4s infinite;
+      }
+
+      @keyframes orbiting {
+         from { transform: rotate(0deg); }
+         to { transform: rotate(360deg); }
+      }
+   </style>
+    <rect
+       id="rect98156"
+       width="16"
+       height="16"
+       x="0"
+       y="0"
+       onclick="{let t = evt.target.nextElementSibling; t.innerHTML = +t.innerHTML + 1; }"/>
+    <text
+       xml:space="preserve"
+       x="8"
+       y="10">1</text>
+   <circle cx="4" cy="4" r="1" fill="#9FDDFF"></circle>
+</svg>
